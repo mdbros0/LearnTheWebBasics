@@ -1,6 +1,6 @@
 /*Step 17: obtain DOM objects */
-const getJokeBtn = document.getElementById("your-button-id"); // add id
-const jokeText = document.getElementById("your-text-id"); // add id
+const getJokeBtn = document.getElementById("getJokeBtn"); // add id
+const jokeText = document.getElementById("jokeText"); // add id
 
 function apiCall() { 
 
@@ -10,7 +10,7 @@ function apiCall() {
     /*Step 20: Get API url and API Key */
 
     fetch("request-url", { // add event request url
-        headers: { 'X-Api-Key': 'your-api-key' } // add api key
+        headers: { 'X-Api-Key': "waelZxNcK93c26VnA4xgMA==rf69GdrSX7ibSsrd" } // add api key
     })
         // Checks the network response 
         .then(function(response) {
@@ -35,7 +35,7 @@ function apiCall() {
 
 
 /*Step 18: Create event listener for button click */
-getJokeBtn.addEventListener("event-listner", apiCall)
+getJokeBtn.addEventListener("click", apiCall)
 
 
 
